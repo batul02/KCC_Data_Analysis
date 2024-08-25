@@ -1,4 +1,4 @@
-# Hadoop and Natural Language Processing Based Analysis on Kisan Call Center (KCC) Data** 
+# Hadoop and Natural Language Processing Based Analysis on Kisan Call Center (KCC) Data
 
 **Index**
 
@@ -14,7 +14,7 @@
    1. Execution 
 1. Conclusion 
 
-**Abstract **
+**Abstract**
 
 - **Problem Statement** 
 
@@ -30,7 +30,7 @@
 
   The dataset is available[ here.](https://kcc-chakshu.icar.gov.in/insights.html) 
 
-**Why is it a Big Data Problem? ![ref1]**
+**Why is it a Big Data Problem?**
 
 - **Volume**: The dataset under analysis is vast, comprising numerous farmer queries directed to the Kisan Call Center (KCC). Each query represents a distinct interaction, contributing to a substantial volume of data that necessitates thorough processing and analysis. 
 - **Variety**: The dataset exhibits diversity, encompassing a wide range of agricultural queries covering topics such as crop issues, pest management, fertilizer usage, and disease identification. Queries may vary significantly in language, dialect, and specific agricultural context, resulting in diverse textual data. 
@@ -38,7 +38,7 @@
 - **Veracity**: The dataset may contain inconsistencies, errors, or noise stemming from factors like human data entry errors, variations in farmers' language or terminology, and technical glitches during data collection. Ensuring data accuracy and reliability is crucial for obtaining meaningful insights and making informed decisions. 
 - **Value**: Despite challenges posed by the dataset's volume, variety, velocity, and veracity, deriving insights from the KCC dataset can yield significant value. Analysis of queries and trends can provide valuable insights into farmers' needs, challenges, and preferences, informing decision-making processes, enhancing agricultural practices, and improving support services for farmers. Ultimately, this can lead to increased agricultural productivity, sustainability, and welfare. 
 
-**Big Data Tools **
+**Big Data Tools**
 
 The paper combines MapReduce in a Hadoop environment and Natural Language Processing (NLP) clustering in PySpark for data analysis: 
 
@@ -60,7 +60,7 @@ The paper combines MapReduce in a Hadoop environment and Natural Language Proces
 - Similarity matrix generation based on word frequency. 
 - Clustering using DBSCAN for cluster estimation and agglomerative clustering for grouping queries.
 
-**Implementation **
+**Implementation**
 
 - There are 4 Map-Reduce task:
 - Implement all the 4 task using given steps bleow: 
