@@ -1,6 +1,6 @@
 # Hadoop and Natural Language Processing Based Analysis on Kisan Call Center (KCC) Data** 
 
-**Index ![ref1]**
+**Index **
 
 1. Abstract 
    1. Problem Statement 
@@ -14,7 +14,7 @@
    1. Execution 
 1. Conclusion 
 
-**Abstract ![ref1]**
+**Abstract **
 
 - **Problem Statement** 
 
@@ -38,7 +38,7 @@
 - **Veracity**: The dataset may contain inconsistencies, errors, or noise stemming from factors like human data entry errors, variations in farmers' language or terminology, and technical glitches during data collection. Ensuring data accuracy and reliability is crucial for obtaining meaningful insights and making informed decisions. 
 - **Value**: Despite challenges posed by the dataset's volume, variety, velocity, and veracity, deriving insights from the KCC dataset can yield significant value. Analysis of queries and trends can provide valuable insights into farmers' needs, challenges, and preferences, informing decision-making processes, enhancing agricultural practices, and improving support services for farmers. Ultimately, this can lead to increased agricultural productivity, sustainability, and welfare. 
 
-**Big Data Tools ![ref1]**
+**Big Data Tools **
 
 The paper combines MapReduce in a Hadoop environment and Natural Language Processing (NLP) clustering in PySpark for data analysis: 
 
@@ -60,7 +60,7 @@ The paper combines MapReduce in a Hadoop environment and Natural Language Proces
 - Similarity matrix generation based on word frequency. 
 - Clustering using DBSCAN for cluster estimation and agglomerative clustering for grouping queries.
 
-**Implementation ![](Aspose.Words.31c6ea73-2070-4b2e-898a-d1d517dab52e.002.png)**
+**Implementation **
 
 - There are 4 Map-Reduce task:
 - Implement all the 4 task using given steps bleow: 
@@ -81,33 +81,13 @@ The paper combines MapReduce in a Hadoop environment and Natural Language Proces
 
   As we are running python code for map reduce, in python we don’t need to create jar file but we can run our python code directly.  
 
-  Command: 
-
-![](Aspose.Words.31c6ea73-2070-4b2e-898a-d1d517dab52e.003.png)
-
-Execution of code : ![ref1]
-
-![](Aspose.Words.31c6ea73-2070-4b2e-898a-d1d517dab52e.004.jpeg)
 
 **Step4**: 
 
 See the output by command: hdfs dfs -cat /output1/part-00000 
 
-Output of Query Type frequency count: 
 
-![](Aspose.Words.31c6ea73-2070-4b2e-898a-d1d517dab52e.005.png)
-
-Same way,  ![ref1]
-
-Output of Crop Frequency Count: 
-
-![](Aspose.Words.31c6ea73-2070-4b2e-898a-d1d517dab52e.006.png)
-
-Output of Sector Query Frequency Count: 
-
-![](Aspose.Words.31c6ea73-2070-4b2e-898a-d1d517dab52e.007.png)
-
-- NLP Query Clustering PySpark Task : ![ref1]
+- NLP Query Clustering PySpark Task :
 - PySpark is the Python API for Apache Spark, a fast and general- purpose cluster computing system. It provides high-level APIs in Python, Java, Scala, and R, making it easier to build parallel applications to process large-scale data sets. 
 
   **Importance of PySpark for the Task:** 
@@ -152,17 +132,6 @@ Resuls of all the above task done in pyspark: ![ref1]
 
 +----------------+------+ |          Sector| count| +----------------+------+ |ANIMAL HUSBANDRY|  9000| |    HORTICULTURE| 69911| |             825|   134| |       FISHERIES|   185| |     AGRICULTURE| 86329| |            9999|166704| +----------------+------+ 
 
-Results of Clustered Queries: ![ref1]
-
-![](Aspose.Words.31c6ea73-2070-4b2e-898a-d1d517dab52e.008.jpeg)
-
-No. of Queries vs Crop: 
-
-![](Aspose.Words.31c6ea73-2070-4b2e-898a-d1d517dab52e.009.jpeg)
-
-Pie Chart od queries across sector: ![ref1]
-
-![](Aspose.Words.31c6ea73-2070-4b2e-898a-d1d517dab52e.010.jpeg)
 
 **Conclusion**: 
 
@@ -170,6 +139,4 @@ Pie Chart od queries across sector: ![ref1]
 - Through the application of MapReduce in Hadoop environment, we were able to perform various tasks such as determining the frequency of different crops, query types, crop categories, and sectors. This allowed us to understand the prevalent concerns and topics of interest among farmers. 
 - Additionally, by leveraging PySpark, we conducted NLP-based clustering to group similar queries. This approach helped identify common themes and questions asked by farmers, enabling more efficient handling of queries and provision of relevant information through KCC. 
 - Overall, the combination of big data analytics and NLP techniques offers significant potential for enhancing the effectiveness and responsiveness of agricultural support systems like KCC. By gaining deeper insights into farmer queries and concerns, agricultural authorities can better tailor their services and interventions to meet the needs of farmers, ultimately contributing to improved agricultural productivity and livelihoods. 
-
-[ref1]: Aspose.Words.31c6ea73-2070-4b2e-898a-d1d517dab52e.001.png
 
