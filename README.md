@@ -1,6 +1,6 @@
 # Hadoop and Natural Language Processing Based Analysis on Kisan Call Center (KCC) Data** 
 
-**Index **
+**Index**
 
 1. Abstract 
    1. Problem Statement 
@@ -101,36 +101,6 @@ See the output by command: hdfs dfs -cat /output1/part-00000
 **Summary of the Code**: 
 
 I use PySpark for preprocessing textual data, performing NLP-based clustering, and visualizing the results. It loads a dataset of farmer queries, preprocesses the text using tokenization and lemmatization, transforms it into TF-IDF vectors, and clusters similar queries using the KMeans algorithm. Finally, it visualizes the clustering results to gain insights into the queries received by the Kisan Call Center. PySpark's distributed computing capabilities make it well-suited for processing large volumes of textual data and performing complex analytics tasks efficiently. 
-
-Resuls of all the above task done in pyspark: ![ref1]
-
-+-----------------+-----+ |        QueryType|count| +-----------------+-----+ |               51|   17| |               15|  185| |               11|  114| |          Poultry|   31| |               29|41086| |               87|  140| | Plant Protection|   70| |                3|22315| |Field Preparation|   23| |               34|   14| +-----------------+-----+ only showing top 10 rows 
-
-+------------+------+ 
-
-|        Crop| count| +------------+------+ 
-
-|        9999|166704| |Cotton Kapas| 19503| 
-
-|       Wheat| 14110| 
-
-|      Tomato|  7550| 
-
-|      Others|  7211| 
-
-|        1280|  7192| 
-
-|        1279|  6419| 
-
-|       Onion|  6023| 
-
-|         Ber|  5646| 
-
-|        1037|  5040| +------------+------+ only showing top 10 rows 
-
-+-----------+------+ |   Category| count| +-----------+------+ |          0|332261| |Fiber Crops|     1| | Vegetables|     1| +-----------+------+ 
-
-+----------------+------+ |          Sector| count| +----------------+------+ |ANIMAL HUSBANDRY|  9000| |    HORTICULTURE| 69911| |             825|   134| |       FISHERIES|   185| |     AGRICULTURE| 86329| |            9999|166704| +----------------+------+ 
 
 
 **Conclusion**: 
